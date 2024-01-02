@@ -661,10 +661,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/audio.r_submix.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6785.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/gps.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.mt6785.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal_hal.so \
@@ -1429,11 +1429,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/gps.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.mt6785.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/hwcomposer.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6785.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.elliptic.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/hw/sensors.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6785.so \
