@@ -318,7 +318,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
-    vendor/xiaomi/rosemary/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
@@ -1183,6 +1182,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys_edma.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.vndk.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
@@ -1238,8 +1240,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeatureiodrv_mem.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib/libflatbuffers-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflatbuffers-cpp.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib/libfmq.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfmq.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libformatter.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
@@ -1331,6 +1331,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_header_stub.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libverno.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libviagpsrpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libviagpsrpc.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libvolte_core_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_core_shr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libvolte_xdmc_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_xdmc_shr.so \
@@ -1352,10 +1353,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10ofilm_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_india_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
@@ -1928,6 +1932,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libCamera_ov64b40semcomipirawindia_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov64b40semcomipirawindia_Video_Zoom2.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libCamera_ov64b40semcomipirawindia_portrait_capture_full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov64b40semcomipirawindia_portrait_capture_full.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libCamera_ov64b40semcomipirawindia_portrait_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov64b40semcomipirawindia_portrait_preview_full.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDR.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
@@ -1965,6 +1970,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
@@ -2046,9 +2054,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_lmv.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_rss.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libflatbuffers-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflatbuffers-cpp.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfmq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmq.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatter.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
@@ -2220,6 +2227,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libverno.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libviagpsrpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviagpsrpc.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
@@ -2249,10 +2257,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10ofilm_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_india_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@6.1.so \
