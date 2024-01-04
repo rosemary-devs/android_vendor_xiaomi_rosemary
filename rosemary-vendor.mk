@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2236:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2236 \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2236_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2236_ENUM \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
@@ -318,6 +319,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
@@ -529,6 +531,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota:$(TARGET_COPY_OUT_VENDOR)/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota:$(TARGET_COPY_OUT_VENDOR)/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/mdota/MTK_OTA.mcfota:$(TARGET_COPY_OUT_VENDOR)/etc/mdota/MTK_OTA.mcfota \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
@@ -646,10 +650,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl-mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
@@ -677,8 +687,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355sunny_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355sunny_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/imx355sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355sunny_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.core.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.af.core.so \
@@ -1349,13 +1363,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/mt6785/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6785/libpq_prot.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov13b10sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov13b10sunny_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_tuning.so \
@@ -2253,13 +2274,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov13b10sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov13b10sunny_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_india_IdxMgr.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_india_tuning.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_tuning.so \
