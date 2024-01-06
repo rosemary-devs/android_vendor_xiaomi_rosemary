@@ -150,6 +150,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/CRSVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_AudioParam.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_ParamUnitDesc.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/CRSVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_AudioParam.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_ParamUnitDesc.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_ParamUnitDesc.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/MicInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_AudioParam.xml \
@@ -255,6 +259,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/aurisys_param/FV-SAM-MTKXX.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_param/FV-SAM-MTKXX.dat \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/CFR_para_48M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_48M.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/CFR_para_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_M.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/CFR_para_T.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_T.bin \
@@ -1183,6 +1188,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519PdafLibraryWrapper.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_bsscore.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
@@ -1195,9 +1202,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys_edma.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.vndk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentenginec.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libawinicsmartpaparse.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
@@ -1245,6 +1264,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libcrypto-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libcurl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_drv.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libdip_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_imem.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_postproc.so \
@@ -1253,6 +1273,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libformatter.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libfvaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfvaudio.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
@@ -1327,6 +1348,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscltm.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimaka.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
@@ -1967,6 +1990,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libMtkOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkOmxCore.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
@@ -1980,6 +2004,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX519PdafLibraryWrapper.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bsscore.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/lib_sr_models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_sr_models.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
@@ -2001,9 +2027,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libawinicsmartpaparse.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
@@ -2071,6 +2109,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libcrypto-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libcurl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcurl-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_drv.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libdip_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_imem.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_postproc.so \
@@ -2088,6 +2127,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatter.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libfvaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfvaudio.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
@@ -2240,6 +2280,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libsensor_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_custom.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimaka.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
+    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-md.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
