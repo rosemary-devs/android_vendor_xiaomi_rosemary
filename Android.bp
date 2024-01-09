@@ -96,16 +96,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb@1.2-service-mediatekv2",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "gnss-mediatek",
+	name: "manifest_gnss-mediatek",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss-mediatek.xml",
 	filename_from_src: true,
@@ -114,18 +105,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "gnss@2.1-mtk-service",
+	name: "manifest_gnss@2.1-mtk-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-mtk-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "lbs_hidl_service@1.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -135,6 +117,24 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.4-service.widevine",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.usb@1.2-service-mediatekv2",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_lbs_hidl_service@1.0",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
