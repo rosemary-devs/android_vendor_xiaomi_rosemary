@@ -96,6 +96,15 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_gnss-mediatek",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss-mediatek.xml",
