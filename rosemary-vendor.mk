@@ -257,6 +257,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/aurisys_param/FV-SAM-MTKXX.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_param/FV-SAM-MTKXX.dat \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/CFR_para_48M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_48M.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/CFR_para_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_M.bin \
@@ -2444,10 +2446,10 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     com.android.hotwordenrollment.common.util \
-    manifest_android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    manifest_gnss-mediatek \
-    manifest_gnss@2.1-mtk-service \
+    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
+    android.hardware.usb@1.2-service-mediatekv2 \
+    gnss-mediatek \
+    gnss@2.1-mtk-service \
+    lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
-    manifest_android.hardware.usb@1.2-service-mediatekv2 \
-    manifest_lbs_hidl_service@1.0 \
     manifest_media_c2_V1_1_default
